@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5500/index.html/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Dami Flipkart</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f3f6;
+        }
+        .navbar {
+            background-color: #2874f0;
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar h1 {
+            margin: 0;
+        }
+        .search-bar input {
+            padding: 8px;
+            width: 300px;
+            border: none;
+            border-radius: 4px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+        .product-card:hover {
+            transform: scale(1.03);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+        .product-card h3 {
+            font-size: 18px;
+            margin: 10px 0 5px;
+        }
+        .product-card p {
+            color: green;
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #172337;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>Dami Flipkart</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products, brands and more">
+        </div>
+    </div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="./Dami Flipkart_files/photo-1510557880182-3cc77a37b36f" alt="Smartphone">
+            <h3>Smartphone</h3>
+            <p>₹9,999</p>
+        </div>
+        <div class="product-card">
+            <img src="./Dami Flipkart_files/photo-1587202372775-a7299ce79a70" alt="Laptop">
+            <h3>Laptop</h3>
+            <p>₹35,499</p>
+        </div>
+        <div class="product-card">
+            <img src="./Dami Flipkart_files/photo-1585386959984-a4155228fcd3" alt="Headphones">
+            <h3>Headphones</h3>
+            <p>₹799</p>
+        </div>
+        <div class="product-card">
+            <img src="./Dami Flipkart_files/photo-1580906855281-5f06348e6dd8" alt="Smartwatch">
+            <h3>Smartwatch</h3>
+            <p>₹1,999</p>
+        </div>
+        <div class="product-card">
+            <img src="./Dami Flipkart_files/photo-1584270354949-1b5b2c83a25e" alt="Shoes">
+            <h3>Sneakers</h3>
+            <p>₹2,499</p>
+        </div>
+        <div class="product-card">
+            <img src="./Dami Flipkart_files/photo-1596461404969-9ae70b2c4e9c" alt="Backpack">
+            <h3>Backpack</h3>
+            <p>₹999</p>
+        </div>
+        <div class="product-card">
+            <img src="./Dami Flipkart_files/photo-1598970434795-0c54fe7c0642" alt="Camera">
+            <h3>Camera</h3>
+            <p>₹14,499</p>
+        </div>
+        <div class="product-card">
+            <img src="./Dami Flipkart_files/photo-1607346625605-0ca3321be01c" alt="Watch">
+            <h3>Luxury Watch</h3>
+            <p>₹6,999</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2025 Dami Flipkart | All rights reserved.
+    </div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
